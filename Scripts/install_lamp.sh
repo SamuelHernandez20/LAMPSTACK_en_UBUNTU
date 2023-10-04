@@ -1,5 +1,6 @@
 #!/bin/bash
-#Muestra comandos que se van ejecutando
+
+#Muestra comandos que se van ejecutando por si falla
 set -x
 
 echo "Esto es una prueba"
@@ -15,5 +16,6 @@ echo "Esto es una prueba"
 #Instalar apache
 
 sudo apt install apache2 -y
+
 
 
