@@ -17,5 +17,9 @@ echo "Esto es una prueba"
 
 sudo apt install apache2 -y
 
+# instalar sgbd mysql
+
+sudo apt install mysql-server -y
+
 
 
