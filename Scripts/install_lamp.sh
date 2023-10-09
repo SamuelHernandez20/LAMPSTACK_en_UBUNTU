@@ -41,3 +41,6 @@ cp ../php/index.php /var/www/html
 # modificar el propietario y grupo de /var/www/html para usuario de apache
 
 chown -R www-data:www-data /var/www/html
+
+
+
