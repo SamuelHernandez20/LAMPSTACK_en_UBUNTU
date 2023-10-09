@@ -6,9 +6,9 @@ set -x
 # Declaramos las variables de entorno
 #-----------------------------
 PHPMYADMIN_APP_PASSWORD=123456
+APP_USER=samuel
+APP_PASSWD=123456
 #---------------------------
-
-#echo "Esto es una prueba"
 
 # Actualizamos los repos
 
@@ -35,3 +35,9 @@ echo "phpmyadmin phpmyadmin/app-password-confirm password $PHPMYADMIN_APP_PASSWO
 # Instalacion phpmyadmin
 apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
 
+
+# Creacion del usuario que tenga acceso a todas las bases de datos de forma automatizada:
+
+mysql -u root <<< "CREATE USER '$APP_USER'@'%' IDENTIFIED BY '$APP_PASSWD';"
+
+mysql -u root <<<  "GRANT ALL PRIVILEGES ON *.* TO '$APP_USER'@'%'";
