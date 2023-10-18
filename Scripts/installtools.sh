@@ -44,9 +44,9 @@ mysql -u root <<< "CREATE USER '$APP_USER'@'%' IDENTIFIED BY '$APP_PASSWD';"
 
 mysql -u root <<<  "GRANT ALL PRIVILEGES ON *.* TO '$APP_USER'@'%'";
 
-#INSTALAMOS ADMINER
-mkdir -p /var/www/html/adminer
+#Paso 3. INSTALAMOS ADMINER
 
+mkdir -p /var/www/html/adminer
 
 #--Herramientas adicionales:
 
@@ -61,7 +61,7 @@ mv /var/www/html/adminer/adminer-4.8.1-mysql.php /var/www/html/adminer/index.php
 
 chown -R www-data:www-data /var/www/html
 
-# Instalamos el GoAccess 
+#Paso 4. Instalamos el GoAccess 
 
 apt install goaccess -y
 
@@ -89,3 +89,4 @@ cp ../conf/000-default-stats.conf /etc/apache2/sites-available/000-default.conf
 # Reiniciar servicio de apache
 
 systemctl restart apache2
+
