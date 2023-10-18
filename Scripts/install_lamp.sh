@@ -3,8 +3,6 @@
 #Muestra comandos que se van ejecutando por si falla
 set -x
 
-#echo "Esto es una prueba"
-
 # Actualizamos los repos
 
 apt update
