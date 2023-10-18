@@ -28,7 +28,7 @@ Por el contrario este otro trae nuevas versiones a los paquetes ya instalados:
 ```
 apt upgrade
 ```
-## 2. Implantación de la pila LAMP:
+## 2. Implantación de la pila Lamp:
 
 ### 2.1 Instalación de APACHE:
 
