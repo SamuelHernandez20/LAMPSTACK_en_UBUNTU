@@ -199,5 +199,21 @@ Seguidamente, el directorio *.conf* podemos  crear un segundo archivo de configu
 
 ![](images/confstats.png)
 
+Y mediante este comando de forma automatizada podemos estar copiando con un nombre distinto nuestro archivo de configuración con el nombre **000-default.conf** para que lo detecte apache con el nombre por defecto que tiene ese archivo:
 
+Internamente el archivo está puesto de esta forma:
+
+![](images/vhost_stast.png)
+
+
+
+```
 cp ../conf/000-default-stats.conf /etc/apache2/sites-available/000-default.conf
+```
+
+Después sería conveniente reinciar:
+
+```
+systemctl restart apache2
+```
+
