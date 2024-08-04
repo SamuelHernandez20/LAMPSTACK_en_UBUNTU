@@ -1,5 +1,3 @@
-# Practica_01
-## Práctica 1.
 ### L A M P S T A C K en UBUNTU 
 Para esta práctica hay que realizar principalmente la instalación de la pila **LAMP** (Linux, Apache, MySQL, PHP.)    
 El proceso se hará de forma automatizada mediante 2 scripts: uno de ellos será utilizado para la instalación de la pila **LAMP** y el otro para la implantación de ciertas herramientas webs como phpmyadmin y adicionales.
